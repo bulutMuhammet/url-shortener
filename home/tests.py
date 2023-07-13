@@ -17,8 +17,8 @@ class ShortenURLTestCase(TestCase):
     def test_shorten_url_valid_payload(self):
         response = self.client.post(self.url, data=self.valid_payload)
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
-        self.assertIn('Original URL', response.data)
-        self.assertIn('Short URL', response.data)
+        self.assertIn('original_url', response.data)
+        self.assertIn('short_url', response.data)
 
 class RedirectURLViewTestCase(TestCase):
     def setUp(self):

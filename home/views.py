@@ -18,8 +18,8 @@ class ShortenURL(APIView):
         short_url = f"{request.build_absolute_uri('/')}{short_url_obj.short_url}"
         original_url = short_url_obj.original_url
         return Response(status=status.HTTP_201_CREATED, data={
-            "Original URL": original_url,
-            "Short URL": short_url
+            "original_url": original_url,
+            "short_url": short_url
         })
 
 

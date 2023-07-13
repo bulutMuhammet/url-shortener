@@ -10,7 +10,7 @@ The project includes the following URLs:
   - Endpoint: `/api`
   - Method: POST
   - Payload: `{"original_url": "https://www.example.com"}`
-  - Response: `{"Original URL": "https://www.example.com", "Short URL": "http://localhost:8000/abcd"}`
+  - Response: `{"original_url": "https://www.example.com", "short_url": "http://localhost:8000/abcd"}`
 
 - **Redirection to original URL:**
   - Endpoint: `/<str:short_code>`
