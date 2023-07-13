@@ -35,7 +35,7 @@
 
 <div class="content text-white container text-center" style="margin-top: 15rem">
     {% if original_url %}
-        <h4>Results:</h4>
+        <h2>Results:</h2>
 
     {% else %}
         <h4>Shorten URL Fastly</h4>
@@ -45,12 +45,12 @@
         <div class="col-sm-6 col-lg-4 col-xs-12 ">
             {% if original_url %}
 
-                <p>
-                    <b>Original URL</b>: <a href="{{ original_url }}">{{ original_url }}</a>
+                <p class="text-muted" style="color: #777">
+                    <b>Original URL</b>: <a style="color: #777" href="{{ original_url }}">{{ original_url }}</a>
                 </p>
-                <p>
-                    <b>Shorten URL</b>: <a href="{{ short_url }}">{{ short_url }}</a>
-                </p>
+                <h4>
+                    <span>Shorten URL</span>: <a href="{{ short_url }}">{{ short_url }}</a>
+                </h4>
 
                 <a href="/"  class="btn btn-info text-white mt-2 mb-2 col-lg-5">
                         Try Another URL
